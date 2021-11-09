@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>JS Input Exercise</title>
+</head>
+
+<body>
+  <div class="form">
+    <br/>
+    <br/>
+    <div id="row1">
+      <h7 class="formLabel"> First Name </h7>
+    </div>
+    <input class="formInput" type="text" name="firstname" id="firstName" placeholder="Enter your first name"/>
+    <div id="row2">
+      <h7 class="formLabel"> Last Name </h7>
+    </div>
+    <input class="formInput" type="text" name="lastname" id="lastName" placeholder="Enter your last name"/>
+    <div id="row3">
+      <h7 id="emailNote" class="formLabel"> Email </h7>
+      <div id="errors3"></div>
+    </div>
+    <input class="formInput" type="text" name="email" id="email" placeholder="Enter your email address"/>
+    <div id="row4">
+      <h7 id="checkBoxNote" class="formLabel"> Stay Connected </h7>
+    </div>
+    <div>
+      <input type="checkbox" id="subscribe" name="interest" value="subscribe">
+      <label for="subscribe">Sign Up for Newsletter</label>
+    </div>
+    <br/>
+    <button id="submit_btn">Submit</button>
+  </div>
+  <div id="loading_animation"></div>
+  <div id="post_submit"></div>
+  <script src="script.js"></script>
+  <script>
+    (function() {
+      app.initialize();
+    })();
+  </script>
+</body>
+</html>
